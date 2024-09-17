@@ -169,3 +169,19 @@ if (time < 10) {
     greet = "good evening"
 }
 console.log(greet)
+
+const aa = 1;
+const bb = 1;
+
+result = aa + bb;
+console.log(result);
+
+
+let firstName = "Joseph"
+let lastName = "Leathem"
+let thisYear = 2024
+let birthYear = 1998
+
+let greetings = `Hello ${firstName} ${lastName}, it is year ${thisYear}, you are ${thisYear-birthYear} years old.`
+
+console.log(greetings)

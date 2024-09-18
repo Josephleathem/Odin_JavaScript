@@ -225,20 +225,53 @@ hello("Jay");
 
 // showMessage();
 
-function sayHi() {
-    alert("Hello");
-}
-let func = sayHi;
+// function sayHi() {
+//     alert("Hello");
+// }                                  Commented out due to duplicate declaration below causing error in code
+// let func = sayHi;
 
-func();
-sayHi();
+// func();
+// sayHi();
 
 // function decleration
-function sum(a,b){
-    return a + b;
-}
+// function sum(a,b){
+//     return a + b;        Commented out due to duplicate declaration below causing error in code
+// }
 
 // function expression 
+// let sum = function(a, b) {            Commented out due to duplicate declaration below causing error in code
+//     return a + b;                
+// };
+
+// arrow function 
+let func = (arg1, arg2, argN) => expression;
+
+
+// Example Visual 
+let sum1 = (a, b) => a + b;
+/*This arrow function id shorter for of:
+
 let sum = function(a, b) {
     return a + b;
 };
+*/
+alert(sum1(1, 2));
+
+// multiline arrow function
+let sum = (a, b) => { // the curly brace opens a multiline function
+    let result = a + b;
+    return result; // if we use curly braces, then we need an explicit "return"
+};
+
+alert(sum(5, 7));
+
+function ask(question, yes, no) {           // let ask = (question, yes, no) => {
+    if (confirm(question)) yes();           // if (confirm(question)) yes();
+    else no();                              // else no();
+}                                            // };
+
+ask(
+    "Do you agree?",
+    function() { alert("You agreed."); },
+    () => { alert("You canceled the execution."); }
+    )

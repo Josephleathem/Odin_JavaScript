@@ -203,3 +203,42 @@ console.log(madeAString)
 
 const myNumber = Math.random();
 console.log(myNumber)
+
+const testArray = ["I", "Love", "You:"];
+const jointArray = testArray.join("-") // joins the array with this character
+
+console.log(testArray)
+console.log(jointArray)
+
+// you can set default parameters
+function hello(name = "Joseph") {
+    console.log(`Hello ${name}!`);
+}
+
+hello("Mine");
+hello();
+hello("Jay");
+
+// function showMessage() {
+//     alert('Hello everyone!' );
+// }
+
+// showMessage();
+
+function sayHi() {
+    alert("Hello");
+}
+let func = sayHi;
+
+func();
+sayHi();
+
+// function decleration
+function sum(a,b){
+    return a + b;
+}
+
+// function expression 
+let sum = function(a, b) {
+    return a + b;
+};

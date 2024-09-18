@@ -185,3 +185,21 @@ let birthYear = 1998
 let greetings = `Hello ${firstName} ${lastName}, it is year ${thisYear}, you are ${thisYear-birthYear} years old.`
 
 console.log(greetings)
+
+
+function favoriteAnimal(animal) {
+    return animal + " is my favorite animal!"
+}
+
+console.log(favoriteAnimal('Lion'))
+
+const myText = "I am a string";
+const newString = myText.replace("string", "Steak");
+console.log(newString);
+
+const myArray = ["I", "Love", "Chocolate", "Frogs"];
+const madeAString = myArray.join(" ");
+console.log(madeAString)
+
+const myNumber = Math.random();
+console.log(myNumber)

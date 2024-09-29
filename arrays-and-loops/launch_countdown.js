@@ -6,13 +6,20 @@
 let i = 10;
 
 do {
+    
+    const para = document.createElement('p');
+    output.appendChild(para);
+
         if (i === 0) {
-            console.log('Blast off!'); //  If the number is 0, print "Blast off!" to the paragraph.
+            // console.log('Blast off!'); //  If the number is 0, print "Blast off!" to the paragraph.
+            para.textContent = 'Blast off!'
         } else if (i === 10) {
-            console.log('Countdown 10'); // If the number is 10, print "Countdown 10" to the paragraph.
+            // console.log('Countdown 10'); // If the number is 10, print "Countdown 10" to the paragraph.
+            para.textContent = 'Countdown 10'
         }
         else {
-            console.log(i);
+            // console.log(i);
+            para.textContent = i
         }
 
     i--;
@@ -29,3 +36,18 @@ do {
 
 // Different iteration numbers require different text to be put in the paragraph for that iteration 
 //     (you'll need a conditional statement and multiple para.textContent = lines)
+
+
+// let i = 10;
+// while (i >= 0) {
+//   const para = document.createElement('p');
+//   if (i === 10) {
+//     para.textContent = `Countdown ${i}`;
+//   } else if (i === 0) {                                         // This is the assignment solution mine has the same result
+//     para.textContent = 'Blast off!';
+//   } else {
+//     para.textContent = i;
+//   }
+//   output.appendChild(para);
+//   i--;
+// }
